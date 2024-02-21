@@ -1,7 +1,9 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Introduce
+### This project contains some examples of what you can build with Vietmap React-Native SDK. Some features will built into this project are showing a simple map, adding a marker, line, and shape (polygon), and changing the map style programmatically.
 # Configuration
 - Create `vietmap_config.tsx` file in the root folder
-- In this file, copy and paste below code to run the project
+- In this file, copy and paste the below code to run the project
 ```tsx
 export const vietmapAPIKey = 'YOUR_API_KEY_HERE';
 
@@ -10,7 +12,7 @@ export const vietmapRasterStyle = `https://maps.vietmap.vn/api/maps/raster/style
 export const vietmapSatelliteStyle = `https://maps.vietmap.vn/api/maps/satellite/styles.json?apikey=${ vietmapAPIKey }`;
 
 ```
-- Replace your `Vietmap api key` to `YOUR_API_KEY_HERE` and follow below guide to run the project
+- Replace your `YOUR_API_KEY_HERE` with `Vietmap api key`  and follow the below guide to run the project
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
