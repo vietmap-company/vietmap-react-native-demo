@@ -1,8 +1,8 @@
 import Vietmap from '@vietmap/vietmap-gl-react-native';
 import {StyleSheet, View} from 'react-native';
-import {vietmapStyle} from '../vietmap_config';
+import {vietmapStyle} from '../../vietmap_config';
 import {useEffect, useState} from 'react';
-import notifyMessage from '../util/Toast';
+import notifyMessage from '../../util/Toast';
 
 const styles = StyleSheet.create({
   page: {

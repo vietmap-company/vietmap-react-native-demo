@@ -84,6 +84,18 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('Change Style')}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Move Camera"
+            onPress={() => props.navigation.navigate('Move Camera')}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Show PointAnnotation"
+            onPress={() => props.navigation.navigate('Show PointAnnotation')}
+          />
+        </View>
       </View>
     </View>
   );

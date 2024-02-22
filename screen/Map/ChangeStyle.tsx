@@ -3,7 +3,7 @@ import {
   vietmapRasterStyle,
   vietmapSatelliteStyle,
   vietmapStyle,
-} from '../vietmap_config';
+} from '../../vietmap_config';
 import SelectDropdown from 'react-native-select-dropdown';
 import {useState} from 'react';
 import Vietmap from '@vietmap/vietmap-gl-react-native';

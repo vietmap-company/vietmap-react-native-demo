@@ -1,6 +1,6 @@
 import Vietmap, {Camera} from '@vietmap/vietmap-gl-react-native';
 import {StyleSheet, Text, View} from 'react-native';
-import {vietmapStyle} from '../vietmap_config';
+import {vietmapStyle} from '../../vietmap_config';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import PropTypes from 'prop-types';

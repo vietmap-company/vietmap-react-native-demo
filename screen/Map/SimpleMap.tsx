@@ -1,7 +1,7 @@
 import VietmapGL from '@vietmap/vietmap-gl-react-native';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {vietmapStyle} from '../vietmap_config';
+import {vietmapStyle} from '../../vietmap_config';
 
 const styles = StyleSheet.create({
   page: {
