@@ -102,6 +102,12 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('Custom Callout')}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Heatmap"
+            onPress={() => props.navigation.navigate('Heatmap')}
+          />
+        </View>
       </View>
     </View>
   );
