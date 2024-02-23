@@ -96,7 +96,6 @@ class ShowPointAnnotation extends React.Component<{}, ShowPointAnnotationCompone
         if (this.state.activeAnnotationIndex === activeIndex) {
             return;
         }
-
         this._scaleIn = new Animated.Value(0.6);
         Animated.timing(this._scaleIn, {
             toValue: 1.0, duration: 200,
@@ -163,22 +162,25 @@ class ShowPointAnnotation extends React.Component<{}, ShowPointAnnotationCompone
                 );
             }
         }
-
         return items;
     }
     render() {
         return (
-            <View style={{flex:1}}>
+            <View style={{ flex: 1 }}>
                 <Vietmap.MapView
+                    tintColor={"#37FAD4"}
                     ref={c => (this._map = c)}
                     onPress={this.onPress}
                     styleURL={vietmapStyle}
                     style={{ flex: 1 }}>
                     <Vietmap.Camera
                         zoomLevel={8}
-                        centerCoordinate={this.state.coordinates[0]}
+                        centerCoordinate={this.state.coordinates[0]} 
+                    /> 
+                    <Vietmap.UserLocation
+                        renderMode="native"
+                        androidRenderMode="compass"
                     />
-
                     {this.renderAnnotations()}
                 </Vietmap.MapView>
 

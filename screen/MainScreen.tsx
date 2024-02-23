@@ -96,6 +96,12 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('Show PointAnnotation')}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Custom Callout"
+            onPress={() => props.navigation.navigate('Custom Callout')}
+          />
+        </View>
       </View>
     </View>
   );

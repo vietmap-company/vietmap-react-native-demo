@@ -9,6 +9,7 @@ import AddShape from '../screen/AddShape';
 import ChangeStyle from '../screen/Map/ChangeStyle';
 import MoveCamera from '../screen/Camera/MoveCamera';
 import ShowPointAnnotation from '../screen/Annotation/ShowPointAnnotations';
+import CustomCallout from '../screen/Annotation/CustomCallout';
 const Stack = createStackNavigator();
 const Navigation = ({props}: any) => {
   return (
@@ -23,6 +24,8 @@ const Navigation = ({props}: any) => {
         <Stack.Screen name="Change Style" component={ChangeStyle} />
         <Stack.Screen name="Move Camera" component={MoveCamera} />
         <Stack.Screen name="Show PointAnnotation" component={ShowPointAnnotation} />
+        <Stack.Screen name="Custom Callout" component={CustomCallout} />
+        
         
       </Stack.Navigator>
     </NavigationContainer>
