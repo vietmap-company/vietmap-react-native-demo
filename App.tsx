@@ -20,7 +20,7 @@ import {
 
 import Navigation from './util/Navigation';
 import Vietmap from '@vietmap/vietmap-gl-react-native';
-Vietmap.setAccessToken(null);
+// Vietmap.setAccessToken(null);
 function App(): React.JSX.Element {
   const styles = StyleSheet.create({
     safeAreaView: {

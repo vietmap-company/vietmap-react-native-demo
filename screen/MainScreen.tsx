@@ -1,5 +1,6 @@
 import {Text, View, Button, StyleSheet, Linking, Image} from 'react-native';
 import React, {ReactElement} from 'react';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const styles = StyleSheet.create({
   text: {
@@ -11,7 +12,8 @@ const styles = StyleSheet.create({
   docText: {
     color: 'blue',
   },
-  buttonContainer: {
+    buttonContainer: {
+    height:700,
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -42,7 +44,7 @@ const MainScreen = (props: {
         style={styles.image}
       />
       <Greeting />
-      <View style={styles.buttonContainer}>
+      <ScrollView contentContainerStyle={styles.buttonContainer}>
         <View style={styles.button}>
           <Button
             title="Simple Map"
@@ -108,10 +110,18 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('Heatmap')}
           />
         </View>
-      </View>
+
+        <View style={styles.button}>
+          <Button
+            title="ImageOverlay"
+            onPress={() => props.navigation.navigate('ImageOverlay')}
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 };
+
 const Greeting = () => {
   return (
     <Text style={styles.text}>

@@ -1,5 +1,5 @@
 import VietmapGL from "@vietmap/vietmap-gl-react-native";
-import { vietmapSatelliteStyle, vietmapStyle } from "../../vietmap_config";
+import {  vietmapStyle } from "../../vietmap_config";
 
 function Heatmap() {
     return ( 
