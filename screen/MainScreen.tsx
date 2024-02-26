@@ -117,6 +117,12 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('ImageOverlay')}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="ClusterAnnotation"
+            onPress={() => props.navigation.navigate('ClusterAnnotation')}
+          />
+        </View>
       </ScrollView>
     </View>
   );
