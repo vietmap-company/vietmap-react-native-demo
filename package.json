@@ -7,8 +7,10 @@
     "pod": "cd ios && pod install",
     "podios": "cd ios && pod install && yarn ios",
     "android": "react-native run-android",
-    "ios": "react-native run-ios -destination id=8CB823EA-81F5-42EF-8223-48E0AFD4AB04",
+    "ios": "react-native run-ios",
     "ip": "react-native run-ios --device \"Dang Trong Thanh’s iPhone\"",
+    "ip-sim": "react-native run-ios -destination id=8CB823EA-81F5-42EF-8223-48E0AFD4AB04",
+
     "ios2": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",

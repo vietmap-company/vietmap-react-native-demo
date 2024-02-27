@@ -13,6 +13,7 @@ import CustomCallout from '../screen/Annotation/CustomCallout';
 import Heatmap from '../screen/Map/HeatMap';
 import ImageOverlay from '../screen/Map/ImageOverLay';
 import ClusterAnnotation from '../screen/Annotation/ClusterAnnotation';
+import DriveAlongTheRouteAnimation from '../screen/Animations/DriveAlongRouteAnimation';
 const Stack = createStackNavigator();
 const Navigation = ({props}: any) => {
   return (
@@ -31,6 +32,7 @@ const Navigation = ({props}: any) => {
         <Stack.Screen name="Heatmap" component={Heatmap} />
         <Stack.Screen name="ImageOverlay" component={ImageOverlay} />
         <Stack.Screen name="ClusterAnnotation" component={ClusterAnnotation} />
+        <Stack.Screen name="DriveAlongTheRouteAnimation" component={DriveAlongTheRouteAnimation} />
         
         
       </Stack.Navigator>

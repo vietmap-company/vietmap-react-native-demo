@@ -123,6 +123,14 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('ClusterAnnotation')}
           />
         </View>
+
+        <View style={styles.button}>
+          <Button
+            title="DriveAlongTheRouteAnimation"
+            onPress={() => props.navigation.navigate('DriveAlongTheRouteAnimation')}
+          />
+        </View>
+        
       </ScrollView>
     </View>
   );
