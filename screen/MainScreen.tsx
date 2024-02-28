@@ -130,6 +130,12 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('DriveAlongTheRouteAnimation')}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="ChangeUserLocationColor"
+            onPress={() => props.navigation.navigate('ChangeUserLocationColor')}
+          />
+        </View>
         
       </ScrollView>
     </View>

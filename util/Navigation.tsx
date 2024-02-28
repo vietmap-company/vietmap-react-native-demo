@@ -14,6 +14,7 @@ import Heatmap from '../screen/Map/HeatMap';
 import ImageOverlay from '../screen/Map/ImageOverLay';
 import ClusterAnnotation from '../screen/Annotation/ClusterAnnotation';
 import DriveAlongTheRouteAnimation from '../screen/Animations/DriveAlongRouteAnimation';
+import ChangeUserLocationColor from '../screen/Map/ChangeUserLocationColor';
 const Stack = createStackNavigator();
 const Navigation = ({props}: any) => {
   return (
@@ -33,6 +34,7 @@ const Navigation = ({props}: any) => {
         <Stack.Screen name="ImageOverlay" component={ImageOverlay} />
         <Stack.Screen name="ClusterAnnotation" component={ClusterAnnotation} />
         <Stack.Screen name="DriveAlongTheRouteAnimation" component={DriveAlongTheRouteAnimation} />
+        <Stack.Screen name="ChangeUserLocationColor" component={ChangeUserLocationColor} />
         
         
       </Stack.Navigator>
