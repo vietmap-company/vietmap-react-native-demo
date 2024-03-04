@@ -24,6 +24,7 @@ const SimpleMap = () => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
+      
         <VietmapGL.MapView styleURL={vietmapStyle} style={{flex: 1}}>
           <VietmapGL.Camera
             zoomLevel={10}

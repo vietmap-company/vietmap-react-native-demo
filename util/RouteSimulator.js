@@ -99,7 +99,6 @@ class RouteSimulator {
           this.reset();
           return;
         }
-
         this.tick();
       });
     });

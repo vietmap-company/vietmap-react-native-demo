@@ -9,18 +9,19 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "ip": "react-native run-ios --device \"Dang Trong Thanh’s iPhone\"",
-    "ip-sim": "react-native run-ios -destination id=8CB823EA-81F5-42EF-8223-48E0AFD4AB04",
-
-    "ios2": "react-native run-ios",
+    "ip-sim": "react-native run-ios --destination id=8CB823EA-81F5-42EF-8223-48E0AFD4AB04",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "list:ios":"xcrun xctrace list devices",
+    "adb:android":"adb devices" 
   },
   "dependencies": {
     "@react-navigation/native": "5.7.3",
     "@react-navigation/stack": "5.9.0",
     "@types/geojson": "^7946.0.14",
-    "@vietmap/vietmap-gl-react-native": "^0.0.1-pre",
+    "@typescript-eslint/typescript-estree": "^7.1.0",
+    "@vietmap/vietmap-gl-react-native": "^0.0.6",
     "moment": "^2.30.1",
     "prop-types": "15.8.1",
     "react": "18.2.0",
@@ -50,6 +51,9 @@
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
     "typescript": "^5.3.3"
+  },
+  "resolutions": {
+    "@typescript-eslint/typescript-estree": "^7.1.0"
   },
   "engines": {
     "node": ">=18"

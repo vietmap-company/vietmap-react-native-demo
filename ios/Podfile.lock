@@ -1121,12 +1121,12 @@ PODS:
     - React-Core
   - SocketRocket (0.6.1)
   - VietMap (1.1.0)
-  - vietmap-react-native (0.0.1-pre):
+  - vietmap-react-native (0.0.3):
     - React
     - React-Core
     - VietMap (= 1.1.0)
-    - vietmap-react-native/DynamicLibrary (= 0.0.1-pre)
-  - vietmap-react-native/DynamicLibrary (0.0.1-pre):
+    - vietmap-react-native/DynamicLibrary (= 0.0.3)
+  - vietmap-react-native/DynamicLibrary (0.0.3):
     - React
     - React-Core
     - VietMap (= 1.1.0)
@@ -1400,7 +1400,7 @@ SPEC CHECKSUMS:
   RNVectorIcons: 210f910e834e3485af40693ad4615c1ec22fc02b
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   VietMap: 84bdb4bfea1fdf1824ca491e3624c63508edc9dc
-  vietmap-react-native: f7f407366d3c23d575321ee4e5795916406bcca5
+  vietmap-react-native: 99332e87a55f4f870db45cea2e476bfdad7580a4
   Yoga: 1b901a6d6eeba4e8a2e8f308f708691cdb5db312
 
 PODFILE CHECKSUM: ffe57e52f1c4412679a0e3ba147eb27862b101a5

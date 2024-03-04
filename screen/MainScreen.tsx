@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     color: 'blue',
   },
     buttonContainer: {
-    height:700,
+    height:900,
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
