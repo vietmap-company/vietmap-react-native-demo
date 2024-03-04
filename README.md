@@ -12,7 +12,11 @@ export const vietmapRasterStyle = `https://maps.vietmap.vn/api/maps/raster/style
 export const vietmapSatelliteStyle = `https://maps.vietmap.vn/api/maps/satellite/styles.json?apikey=${ vietmapAPIKey }`;
 
 ```
-- Replace your `YOUR_API_KEY_HERE` with `Vietmap api key`  and follow the below guide to run the project
+- Replace your `YOUR_API_KEY_HERE` with `your Vietmap api key` and follow the below guide to run the project
+# Vietmap documentation
+We've created the documentation for all of `vietmap-gl-react-native` package features [here](https://github.com/vietmap-company/vietmap-gl-react-native)
+
+If you're using `Expo project`, follow [this guide documentation](https://github.com/vietmap-company/react-native-expo-demo) to set-up and run project with `vietmap-gl-react-native` package
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
