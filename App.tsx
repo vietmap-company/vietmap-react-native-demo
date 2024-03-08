@@ -3,8 +3,7 @@
  * https://github.com/facebook/react-native
  *
  * @format
- */
-
+ */ 
 import React from 'react';
 import {
   SafeAreaView,
@@ -17,7 +16,6 @@ function App(): React.JSX.Element {
   const styles = StyleSheet.create({
     safeAreaView: { flex: 1 },
   });
-
   return (
     <SafeAreaView style={styles.safeAreaView}>
       <Navigation />

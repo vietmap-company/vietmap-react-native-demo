@@ -1,6 +1,9 @@
-import {Text, View, Button, StyleSheet, Linking, Image} from 'react-native';
-import React, {ReactElement} from 'react';
+import { Text, View, Button, StyleSheet, Linking, Image } from 'react-native';
+import React, { ReactElement } from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
+import { VietmapApi } from '@vietmap/vietmap-api';
+import { Polyline } from '@vietmap/vietmap-api/src/helper'
+import { ReverseRequest, ReverseResponse, RouteRequest, SearchRequest } from '@vietmap/vietmap-api/src/models';
 
 const styles = StyleSheet.create({
   text: {
@@ -12,8 +15,8 @@ const styles = StyleSheet.create({
   docText: {
     color: 'blue',
   },
-    buttonContainer: {
-    height:900,
+  buttonContainer: {
+    height: 900,
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -35,7 +38,7 @@ const styles = StyleSheet.create({
 });
 
 const MainScreen = (props: {
-  navigation: {navigate: (arg0: string) => void};
+  navigation: { navigate: (arg0: string) => void };
 }) => {
   return (
     <View>
@@ -136,7 +139,25 @@ const MainScreen = (props: {
             onPress={() => props.navigation.navigate('ChangeUserLocationColor')}
           />
         </View>
-        
+  
+ 
+
+        <View style={styles.button}>
+          <Button
+            title="ChangeUserLocationColor"
+            onPress={async() => {
+              const vm = new VietmapApi({})
+              const res = await vm.route(
+                [[10.79628438955497,106.70592293472612], [10.801891047584164,106.70660958023404]],
+                new RouteRequest({ vehicle: 'car',apikey: 'YOUR_API_KEY_HERE',points_encoded: true, optimize:true}),
+              )  
+              console.log(res.paths[0].points) 
+              const pl = new Polyline()
+              const r = pl.decode(res.paths[0].points, 5)
+              console.log(r)
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
