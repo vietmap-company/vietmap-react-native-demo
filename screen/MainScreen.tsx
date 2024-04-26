@@ -57,6 +57,12 @@ const MainScreen = (props: {
 
         <View style={styles.button}>
           <Button
+            title="Turn by turn navigation"
+            onPress={() => props.navigation.navigate('VietMapNavigation')}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
             title="Add Marker"
             onPress={() => props.navigation.navigate('Add Marker')}
           />
@@ -144,7 +150,7 @@ const MainScreen = (props: {
 
         <View style={styles.button}>
           <Button
-            title="ChangeUserLocationColor"
+            title="Build Route"
             onPress={async() => {
               const vm = new VietmapApi({})
               const res = await vm.route(

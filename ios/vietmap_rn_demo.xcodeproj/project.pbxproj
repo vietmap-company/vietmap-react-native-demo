@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* vietmap_rn_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* vietmap_rn_demoTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-vietmap_rn_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-vietmap_rn_demo.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */; };
+		1A018029D0685C3BE586B87B /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42B54A082C797F548A1D14 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */; };
+		5369E5BAC8C40D71EE983F8F /* libPods-vietmap_rn_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E897FD0DAB27BA46BF84C53 /* libPods-vietmap_rn_demo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +35,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vietmap_rn_demo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vietmap_rn_demo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vietmap_rn_demo/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vietmap_rn_demo-vietmap_rn_demoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-vietmap_rn_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo.debug.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-vietmap_rn_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo.release.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-vietmap_rn_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vietmap_rn_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E897FD0DAB27BA46BF84C53 /* libPods-vietmap_rn_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vietmap_rn_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7314D975DDB4E4E06F8CFC27 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F42B54A082C797F548A1D14 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vietmap_rn_demo-vietmap_rn_demoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vietmap_rn_demo/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		962B307F26A85075DF9ED82E /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A34D6B61878219F58790F0EB /* Pods-vietmap_rn_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo.release.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo.release.xcconfig"; sourceTree = "<group>"; };
+		B436C680602B427BF6F01F42 /* Pods-vietmap_rn_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demoTests.release.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demoTests/Pods-vietmap_rn_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC86878A274577AAFB507F14 /* Pods-vietmap_rn_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demo.debug.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D981DF8C4F890B6283673660 /* Pods-vietmap_rn_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vietmap_rn_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-vietmap_rn_demoTests/Pods-vietmap_rn_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a in Frameworks */,
+				1A018029D0685C3BE586B87B /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-vietmap_rn_demo.a in Frameworks */,
+				5369E5BAC8C40D71EE983F8F /* libPods-vietmap_rn_demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-vietmap_rn_demo.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */,
+				6E897FD0DAB27BA46BF84C53 /* libPods-vietmap_rn_demo.a */,
+				7F42B54A082C797F548A1D14 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +141,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-vietmap_rn_demo.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-vietmap_rn_demo.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */,
+				CC86878A274577AAFB507F14 /* Pods-vietmap_rn_demo.debug.xcconfig */,
+				A34D6B61878219F58790F0EB /* Pods-vietmap_rn_demo.release.xcconfig */,
+				7314D975DDB4E4E06F8CFC27 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */,
+				962B307F26A85075DF9ED82E /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */,
+				D981DF8C4F890B6283673660 /* Pods-vietmap_rn_demoTests.debug.xcconfig */,
+				B436C680602B427BF6F01F42 /* Pods-vietmap_rn_demoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vietmap_rn_demoTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				F71680319258F966EA68DC2E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				46325A7212E1C7F2ABD4D495 /* [CP] Embed Pods Frameworks */,
+				D6764ECC599CDA51427D59C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vietmap_rn_demo" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				ABCD12E304356C35B16E62F0 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				D869068D8E13E68BC69A4C70 /* [CP] Embed Pods Frameworks */,
+				EE01856854FEAB4FCA516715 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,46 +267,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		46325A7212E1C7F2ABD4D495 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-vietmap_rn_demo-vietmap_rn_demoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		ABCD12E304356C35B16E62F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,24 +306,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		D6764ECC599CDA51427D59C6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		D869068D8E13E68BC69A4C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE01856854FEAB4FCA516715 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,21 +357,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo/Pods-vietmap_rn_demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		F71680319258F966EA68DC2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vietmap_rn_demo-vietmap_rn_demoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vietmap_rn_demo-vietmap_rn_demoTests/Pods-vietmap_rn_demo-vietmap_rn_demoTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +412,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */;
+			baseConfigurationReference = 7314D975DDB4E4E06F8CFC27 /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +439,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */;
+			baseConfigurationReference = 962B307F26A85075DF9ED82E /* Pods-vietmap_rn_demo-vietmap_rn_demoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,7 +463,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-vietmap_rn_demo.debug.xcconfig */;
+			baseConfigurationReference = CC86878A274577AAFB507F14 /* Pods-vietmap_rn_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -489,7 +491,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-vietmap_rn_demo.release.xcconfig */;
+			baseConfigurationReference = A34D6B61878219F58790F0EB /* Pods-vietmap_rn_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -582,11 +584,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -654,11 +652,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

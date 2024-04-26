@@ -15,6 +15,7 @@ import ImageOverlay from '../screen/Map/ImageOverLay';
 import ClusterAnnotation from '../screen/Annotation/ClusterAnnotation';
 import DriveAlongTheRouteAnimation from '../screen/Animations/DriveAlongRouteAnimation';
 import ChangeUserLocationColor from '../screen/Map/ChangeUserLocationColor';
+import VietMapNavigationScreen from '../screen/Navigation/VietMapNavigation';
 const Stack = createStackNavigator();
 const Navigation = ({props}: any) => {
   return (
@@ -35,6 +36,7 @@ const Navigation = ({props}: any) => {
         <Stack.Screen name="ClusterAnnotation" component={ClusterAnnotation} />
         <Stack.Screen name="DriveAlongTheRouteAnimation" component={DriveAlongTheRouteAnimation} />
         <Stack.Screen name="ChangeUserLocationColor" component={ChangeUserLocationColor} />
+        <Stack.Screen name="VietMapNavigation" component={VietMapNavigationScreen} />
         
         
       </Stack.Navigator>
