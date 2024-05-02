@@ -51,5 +51,7 @@ target 'vietmap_rn_demo' do
       config[:reactNativePath],
       :mac_catalyst_enabled => false
     )
+
+  system("cp -R Pods/Headers/Public/VietMapDirections.swift/VietMapDirections.h Pods/Headers/Public/VietMapDirections")
   end
 end

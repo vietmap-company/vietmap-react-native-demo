@@ -1126,7 +1126,7 @@ PODS:
     - React-Core
     - VietMap (= 1.1.0)
     - vietmap-react-native/DynamicLibrary (= 0.0.6)
-  - vietmap-react-native-navigation (0.0.2-pre-4):
+  - vietmap-react-native-navigation (1.0.0):
     - React-Core
     - VietMapCoreNavigation (= 2.1.5)
     - VietMapNavigation (= 2.1.7)
@@ -1429,7 +1429,7 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   VietMap: 84bdb4bfea1fdf1824ca491e3624c63508edc9dc
   vietmap-react-native: 7fe34227c76eeac4859e34153b8533b62b5ca39d
-  vietmap-react-native-navigation: 551983aeb1b42e88bede71bb5c0e9141b05a4c21
+  vietmap-react-native-navigation: 734f150b13f695f6528a20031fdd7ac83fe260e6
   VietMapCoreNavigation: 8ecf7d083f486aba5fa012a4d00f33966c7a82e1
   VietMapDirections.swift: d622c98e381281b39f7dcac2b0445ee2f6e1690e
   VietMapNavigation: 4bd9a7a526d9edf215e8da12470ea9cde4161a2c
@@ -1439,6 +1439,6 @@ SPEC CHECKSUMS:
   VietMapTurf: 323ba165ae0aeb0fb6622d427e5341c14f4afada
   Yoga: 47d399a73c0c0caa9ff824e5c657eae31215bfee
 
-PODFILE CHECKSUM: ffe57e52f1c4412679a0e3ba147eb27862b101a5
+PODFILE CHECKSUM: 1c4338f21a4a19ccdadc2b240076fb5e0d8f4175
 
 COCOAPODS: 1.15.2

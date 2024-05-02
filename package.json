@@ -23,7 +23,7 @@
     "@typescript-eslint/typescript-estree": "^7.1.0",
     "@vietmap/vietmap-api": "^0.1.0",
     "@vietmap/vietmap-gl-react-native": "^0.0.6",
-    "@vietmap/vietmap-react-native-navigation": "^0.0.2-pre-4",
+    "@vietmap/vietmap-react-native-navigation": "^1.0.0",
     "moment": "^2.30.1",
     "prop-types": "15.8.1",
     "react": "18.2.0",

@@ -4,6 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { VietmapApi } from '@vietmap/vietmap-api';
 import { Polyline } from '@vietmap/vietmap-api/src/helper'
 import { ReverseRequest, ReverseResponse, RouteRequest, SearchRequest } from '@vietmap/vietmap-api/src/models';
+import { vietmapAPIKey } from '../vietmap_config';
 
 const styles = StyleSheet.create({
   text: {
@@ -155,8 +156,8 @@ const MainScreen = (props: {
               const vm = new VietmapApi({})
               const res = await vm.route(
                 [[10.79628438955497,106.70592293472612], [10.801891047584164,106.70660958023404]],
-                new RouteRequest({ vehicle: 'car',apikey: 'YOUR_API_KEY_HERE',points_encoded: true, optimize:true}),
-              )  
+                new RouteRequest({ vehicle: 'car',apikey: vietmapAPIKey,points_encoded: true, optimize:true}),
+              ); 
               console.log(res.paths[0].points) 
               const pl = new Polyline()
               const r = pl.decode(res.paths[0].points, 5)

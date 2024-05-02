@@ -2726,10 +2726,10 @@
     "@types/react-native" "0.67.8"
     debounce "^1.2.0"
 
-"@vietmap/vietmap-react-native-navigation@^0.0.2-pre-4":
-  version "0.0.2-pre-4"
-  resolved "https://registry.yarnpkg.com/@vietmap/vietmap-react-native-navigation/-/vietmap-react-native-navigation-0.0.2-pre-4.tgz#1b93e5bb76785524c396400d0092221b4ba06a69"
-  integrity sha512-6kYXv9393zXwPGIyMI8Ic8ES5FNyzLZ6bQ6pgXtZ516tLU7qsEvvkIF6kI7fh7Bs8RzLO2Rk0+6m8SlOvvE2RA==
+"@vietmap/vietmap-react-native-navigation@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vietmap/vietmap-react-native-navigation/-/vietmap-react-native-navigation-1.0.0.tgz#18e0ea895c54b12821aecad324d268b6376f2735"
+  integrity sha512-brE3W2jZv2FXW2e7lIAkz2QHZrTXHCqO5B5uPz3Wm3YyJ7SDdg3jzXzoPTCW7Nk3e8lOwasJomMBIhOwfKAXkw==
 
 "@xmldom/xmldom@^0.8.8":
   version "0.8.10"
