@@ -21,7 +21,7 @@
     "@react-navigation/stack": "5.9.0",
     "@types/geojson": "^7946.0.14",
     "@typescript-eslint/typescript-estree": "^7.1.0",
-    "@vietmap/vietmap-api": "^0.1.0",
+    "@vietmap/vietmap-api": "^1.0.0",
     "@vietmap/vietmap-gl-react-native": "^0.0.6",
     "@vietmap/vietmap-react-native-navigation": "^1.0.0",
     "moment": "^2.30.1",

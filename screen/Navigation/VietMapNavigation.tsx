@@ -195,9 +195,10 @@ const VietMapNavigationScreen: React.FC<void> = () => {
             {timeArriveRemaining ?? ""}
           </Text>
           <Text style={{
-            color: 'lightsteelblue',
+            color: '000000',
             fontSize: 17,
             fontWeight: '400',
+            opacity: 0.8
           }}>
             {totalDistance} - {estimatedArrivalTime}
           </Text>
@@ -221,7 +222,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
   const bannerInstruction = routeProgressData != null ? (
     <View style={{
       borderRadius: 10,
-      width: Dimensions.get('window').width - 20, height: 100, backgroundColor: 'blue', position: 'absolute', left: 10, top: 10, opacity: 0.5
+      width: Dimensions.get('window').width - 20, height: 100, backgroundColor: '#2A5DFF', position: 'absolute', left: 10, top: 10, opacity: 0.7
     }}>
       <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' ,paddingLeft: 20}}>
         
@@ -263,7 +264,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
             right: 50,
             bottom: 50
           }}
-          navigationZoomLevel={16}
+          navigationZoomLevel={18}
           shouldSimulateRoute={true}
           apiKey={vietmapAPIKey}
           onRouteProgressChange={(event) => {

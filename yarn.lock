@@ -2702,10 +2702,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vietmap/vietmap-api@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@vietmap/vietmap-api/-/vietmap-api-0.1.0.tgz#18f2e46a2b856b96306e4f7bb2ee0a67f58af617"
-  integrity sha512-kqmuI7K23xO+Qtx2pGrj8lCuozWi/EG+qyH3C8V+YaoD/ThJz0wALin9SDqwfb0MTeHcnEQAApSyKdXf2XDJCQ==
+"@vietmap/vietmap-api@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vietmap/vietmap-api/-/vietmap-api-1.0.0.tgz#ba297900c5e83235ab50e21026c53b3fd43c674b"
+  integrity sha512-n2xWYQbFgt4CEMAIjWat/hNw/PVtGs5pJN7HkkmK//e7WnmtrqoaNUTWPJbsNfp8+Jm6ayER7o7kQO2/54QAZQ==
   dependencies:
     axios "^1.6.5"
     dotenv "^16.4.1"

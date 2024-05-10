@@ -13,6 +13,7 @@
 		1A018029D0685C3BE586B87B /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42B54A082C797F548A1D14 /* libPods-vietmap_rn_demo-vietmap_rn_demoTests.a */; };
 		5369E5BAC8C40D71EE983F8F /* libPods-vietmap_rn_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E897FD0DAB27BA46BF84C53 /* libPods-vietmap_rn_demo.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D72012202BEDCD8D008E9FD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				D72012202BEDCD8D008E9FD0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +468,7 @@
 			baseConfigurationReference = CC86878A274577AAFB507F14 /* Pods-vietmap_rn_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44G4R58CHN;
@@ -494,6 +497,7 @@
 			baseConfigurationReference = A34D6B61878219F58790F0EB /* Pods-vietmap_rn_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44G4R58CHN;
