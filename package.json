@@ -17,11 +17,13 @@
     "adb:android": "adb devices"
   },
   "dependencies": {
+    "@react-native-community/cli-platform-ios": "3.0.0",
+    "@react-native-community/geolocation": "^3.2.1",
     "@react-navigation/native": "5.7.3",
     "@react-navigation/stack": "5.9.0",
     "@types/geojson": "^7946.0.14",
     "@typescript-eslint/typescript-estree": "^7.1.0",
-    "@vietmap/vietmap-api": "^0.1.0",
+    "@vietmap/vietmap-api": "^1.0.0",
     "@vietmap/vietmap-gl-react-native": "^0.0.6",
     "@vietmap/vietmap-react-native-navigation": "^1.0.0",
     "moment": "^2.30.1",
@@ -31,9 +33,7 @@
     "react-native-elements": "3.4.3",
     "react-native-gesture-handler": "1.10.3",
     "react-native-safe-area-context": "4.10.1",
-    "react-native-select-dropdown": "3.4.0",
-    "react-native-vector-icons": "^10.0.3",
-    "@react-native-community/cli-platform-ios": "3.0.0"
+    "react-native-select-dropdown": "3.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

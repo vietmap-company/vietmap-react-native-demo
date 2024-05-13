@@ -1,18 +1,19 @@
 /* eslint-disable comma-dangle */
 // import React from 'react';
-import { StyleSheet, View, Pressable, Text, Dimensions, Image } from 'react-native';
+import { StyleSheet, View, Pressable, Text, Dimensions, Image, } from 'react-native';
 import VietMapNavigation, { NavigationProgressData } from '@vietmap/vietmap-react-native-navigation';
 import { VietMapNavigationController } from '@vietmap/vietmap-react-native-navigation';
 import React, { useEffect, useState } from 'react';
 import { vietmapAPIKey } from '../../vietmap_config';
 import { RouteData } from '@vietmap/vietmap-react-native-navigation/dist/models/route_data';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { Icon } from 'react-native-elements';
 import Images from './img/index';
 import translationGuide from './trans/index';
+import { CheckBox, Icon } from 'react-native-elements';
+import Geolocation from '@react-native-community/geolocation';
 
 
-const VietMapNavigationScreen: React.FC<void> = () => { 
+const VietMapNavigationScreen: React.FC<void> = () => {
 
   const getGuideText = (modifier: string, type: string) => {
     console.log(modifier, type)
@@ -21,7 +22,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
       let data = [
         type.split(" ").join("_"),
         modifier.split(" ").join("_")
-      ]; 
+      ];
       setGuideKey(data.join('_'))
       setGuideText(translationGuide.get(data.join('_'))?.toLowerCase() ?? '');
 
@@ -101,8 +102,12 @@ const VietMapNavigationScreen: React.FC<void> = () => {
   const [timeArriveRemaining, setTimeArriveRemaining] = useState<string>("");
   const [guideKey, setGuideKey] = useState<string>("");
 
+  const [isSimulateRoute, setSimulateRoute] = useState(false);
   const [isNavigationInprogress, setIsNavigationInprogress] = useState<boolean>(false);
   const startNavigation = routeData != null && !isNavigationInprogress ? (
+   
+   <View>
+
     <View style={{
       borderRadius: 50,
       alignContent: 'center',
@@ -110,14 +115,36 @@ const VietMapNavigationScreen: React.FC<void> = () => {
       paddingLeft: 10,
       paddingRight: 10,
       justifyContent: 'center',
-      width: 160, height: 40, backgroundColor: 'white', position: 'absolute', left: Dimensions.get('window').width / 2 - 80, bottom: 30, opacity: 1
+      flexDirection: 'row',
+      width: 360, height: 60, backgroundColor: 'white', position: 'absolute', left: Dimensions.get('window').width / 2 - 180, bottom: 30, opacity: 1
     }}>
+       <CheckBox
+          center
+          style={{ borderColor:'transparent',shadowColor:'transparent' }}
+          checkedIcon={
+            
+            <Image
+            source={require('../../assets/check.png')} 
+            style={{ height: 25, width: 25  }}
+            />
+          }
+          uncheckedIcon={
+            <Image
+            
+            source={require('../../assets/uncheck.png')} 
+            style={{ height: 25, width: 25 }}
+            />
+          }
+          title= 'Simulate route'
+          checked={isSimulateRoute}
+          onPress={() => setSimulateRoute(!isSimulateRoute)}
+          />  
       <TouchableOpacity
         onPress={() => {
           setIsNavigationInprogress(true)
           VietMapNavigationController.startNavigation()
         }}
-      >
+        >
         <Text
           style={{
             textAlignVertical: 'center',
@@ -131,6 +158,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
         </Text>
       </TouchableOpacity>
     </View >
+            </View>
   ) : null
   const recenterButton = isOverview && routeProgressData != null ? (
 
@@ -195,9 +223,10 @@ const VietMapNavigationScreen: React.FC<void> = () => {
             {timeArriveRemaining ?? ""}
           </Text>
           <Text style={{
-            color: 'lightsteelblue',
+            color: '000000',
             fontSize: 17,
             fontWeight: '400',
+            opacity: 0.8
           }}>
             {totalDistance} - {estimatedArrivalTime}
           </Text>
@@ -221,12 +250,12 @@ const VietMapNavigationScreen: React.FC<void> = () => {
   const bannerInstruction = routeProgressData != null ? (
     <View style={{
       borderRadius: 10,
-      width: Dimensions.get('window').width - 20, height: 100, backgroundColor: 'blue', position: 'absolute', left: 10, top: 10, opacity: 0.5
+      width: Dimensions.get('window').width - 20, height: 100, backgroundColor: '#2A5DFF', position: 'absolute', left: 10, top: 10, opacity: 0.7
     }}>
-      <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' ,paddingLeft: 20}}>
-        
+      <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', paddingLeft: 20 }}>
+
         <Image style={{ height: 64, width: 64 }} source={Images[guideKey]} />
-        <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start',paddingLeft: 20 }}>
+        <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', paddingLeft: 20 }}>
           <Text
             style={{
               color: 'white',
@@ -263,8 +292,8 @@ const VietMapNavigationScreen: React.FC<void> = () => {
             right: 50,
             bottom: 50
           }}
-          navigationZoomLevel={16}
-          shouldSimulateRoute={true}
+          navigationZoomLevel={18}
+          shouldSimulateRoute={isSimulateRoute}
           apiKey={vietmapAPIKey}
           onRouteProgressChange={(event) => {
             setRouteProgressData(event)
@@ -283,7 +312,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
               var data = [
                 type.replace(' ', '_'),
                 modifier.replace(' ', '_')
-              ]; 
+              ];
               getGuideText(modifier, type);
               // setInstructionImage(path);
 
@@ -312,26 +341,32 @@ const VietMapNavigationScreen: React.FC<void> = () => {
           }}
           onRouteBuilt={(event) => {
             setRouteData(event)
-            console.log('onRouteBuilt', event.nativeEvent.data.duration);
+            console.log('onRouteBuilt', event.nativeEvent.data);
           }}
           onMapClick={(event) => {
-            console.log('onMapClick', event.nativeEvent.data.latitude);
+            console.log('onMapClick', event.nativeEvent.data);
           }}
           onMapLongClick={(event) => {
-            console.log('onMapLongClick', event.nativeEvent.data.latitude);
-            VietMapNavigationController.buildRoute(
-              [
-                {
-                  lat: 10.759156,
-                  long: 106.675913,
-                },
-                {
-                  lat: event.nativeEvent.data.latitude,
-                  long: event.nativeEvent.data.longitude,
-                },
-              ],
-              'motorcycle'
-            )
+            console.log('onMapLongClick', event.nativeEvent.data);
+            let selectedLatLng ={
+              lat: event.nativeEvent.data.latitude,
+              long: event.nativeEvent.data.longitude,
+            }
+            Geolocation.getCurrentPosition(info => 
+              {
+                console.log(info.coords.longitude, info.coords.latitude)
+                
+              VietMapNavigationController.buildRoute(
+                [
+                  {
+                    lat: info.coords.latitude,
+                    long: info.coords.longitude,
+                  },
+                  selectedLatLng
+                ],
+                'driving-traffic'
+              )}
+            );
           }}
           onCancelNavigation={() => {
             setIsNavigationInprogress(false)
@@ -369,6 +404,16 @@ const styles = StyleSheet.create({
   mapContainer: {
     flex: 3,
     flexDirection: 'column',
+  },
+  checkboxContainer: {
+    flexDirection: 'row',
+    marginBottom: 20,
+  },
+  checkbox: {
+    alignSelf: 'center',
+  },
+  label: {
+    margin: 8,
   },
 });
 
