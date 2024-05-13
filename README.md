@@ -18,12 +18,20 @@ export const vietmapSatelliteStyle = `https://maps.vietmap.vn/api/maps/satellite
 
 - Add below code to `Info.plist` file.
 ```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Add below code -->
 	<key>VietMapAPIBaseURL</key>
 	<string>https://maps.vietmap.vn/api/navigations/route/</string>
 	<key>VietMapAccessToken</key>
 	<string>YOUR_API_KEY_HERE</string>
 	<key>VietMapURL</key>
 	<string>https://maps.vietmap.vn/api/maps/light/styles.json?apikey=YOUR_API_KEY_HERE</string>
+
+</dict>
+</plist>    
 ```
 
 # Vietmap documentation
