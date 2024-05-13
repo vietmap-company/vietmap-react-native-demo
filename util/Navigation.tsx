@@ -17,6 +17,7 @@ import DriveAlongTheRouteAnimation from '../screen/Animations/DriveAlongRouteAni
 import ChangeUserLocationColor from '../screen/Map/ChangeUserLocationColor';
 import VietMapNavigationScreen from '../screen/Navigation/VietMapNavigation';
 const Stack = createStackNavigator();
+ 
 const Navigation = ({props}: any) => {
   return (
     <NavigationContainer>
@@ -37,8 +38,6 @@ const Navigation = ({props}: any) => {
         <Stack.Screen name="DriveAlongTheRouteAnimation" component={DriveAlongTheRouteAnimation} />
         <Stack.Screen name="ChangeUserLocationColor" component={ChangeUserLocationColor} />
         <Stack.Screen name="VietMapNavigation" component={VietMapNavigationScreen} />
-        
-        
       </Stack.Navigator>
     </NavigationContainer>
   );
