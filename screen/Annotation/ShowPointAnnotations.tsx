@@ -48,7 +48,8 @@ class AnnotationWithRemoteImage extends React.Component<any, any> {
         >
             <View style={styles.annotationContainer}>
                 <Image
-                    source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
+                    // source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
+                    source={require('../../images/bus.png')}
                     style={{ width: ANNOTATION_SIZE, height: ANNOTATION_SIZE }}
                     onLoad={() => this.annotationRef?.refresh()}
                 />
