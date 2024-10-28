@@ -104,8 +104,10 @@ const VietMapNavigationScreen: React.FC<void> = () => {
 
   const [isSimulateRoute, setSimulateRoute] = useState(false);
   const [isNavigationInprogress, setIsNavigationInprogress] = useState<boolean>(false);
+  const [currentLatLng, setCurrentLatLng] = useState({lat: 0, long: 0});
+  const [rawLatLng , setRawLatLng] = useState({lat: 0, long: 0});
   const startNavigation = routeData != null && !isNavigationInprogress ? (
-   
+  
    <View>
 
     <View style={{
@@ -248,6 +250,7 @@ const VietMapNavigationScreen: React.FC<void> = () => {
   ) : null
 
   const bannerInstruction = routeProgressData != null ? (
+    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'flex-start', position: 'absolute',alignItems: 'flex-start',left: 0, top: 0, paddingLeft: 20 ,width: Dimensions.get('window').width - 20, height: 150,}}>
     <View style={{
       borderRadius: 10,
       width: Dimensions.get('window').width - 20, height: 100, backgroundColor: '#2A5DFF', position: 'absolute', left: 10, top: 10, opacity: 0.7
@@ -274,6 +277,25 @@ const VietMapNavigationScreen: React.FC<void> = () => {
         </View>
       </View>
     </View>
+    <Text
+      style={{
+        color: 'black',
+        fontSize: 15,
+        fontWeight: '400',
+        marginTop: 120
+      }}>
+      {"Raw : " + rawLatLng.lat.toFixed(6) + " - " + rawLatLng.long.toFixed(6)}
+    </Text>
+    <Text
+      style={{
+        color: 'black',
+        fontSize: 15,
+        fontWeight: '400',
+        marginTop: 5
+      }}>
+      {"Snap: " + currentLatLng.lat.toFixed(6) + " - " + currentLatLng.long.toFixed(6)}
+    </Text>
+    </View>
   ) : null;
 
   return (
@@ -296,6 +318,14 @@ const VietMapNavigationScreen: React.FC<void> = () => {
           shouldSimulateRoute={isSimulateRoute}
           apiKey={vietmapAPIKey}
           onRouteProgressChange={(event) => {
+            setRawLatLng({
+              lat: event?.nativeEvent?.data?.location?.latitude ?? 0,
+              long: event?.nativeEvent?.data?.location?.longitude ?? 0
+            })
+            setCurrentLatLng({
+              lat: event?.nativeEvent?.data?.snappedLocation?.latitude ?? 0,
+              long: event?.nativeEvent?.data?.snappedLocation?.longitude ?? 0
+            })
             setRouteProgressData(event)
             calculateEstimatedArrivalTime()
             getTimeArriveRemaining()
