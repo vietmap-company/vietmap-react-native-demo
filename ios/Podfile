@@ -36,5 +36,7 @@ target 'newvmproject' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    system("cp -R Pods/Headers/Public/VietMapDirections.swift/VietMapDirections.h Pods/Headers/Public/VietMapDirections")
+
   end
 end
